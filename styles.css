@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    height: 150vh;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr 1fr;
+    grid-template-areas: "header header" "main aside" "section aside" "footer footer";
+    position: relative;
+}
+
+#hero {
+    background-image: url(images/nijwam-swargiary-FPNnKfjcbNU-unsplash.jpg);
+    height: 20vh;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    background-color: black;
+    color: beige;
+    font-size: 50px;
+}
+
+header {
+    border: 2px solid black;
+    grid-area: header;
+    background-color: beige;
+}
+
+img {
+    height: 200px;
+    width: 250px;
+}
+
+nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(85, 83, 64);
+    padding: 10px;
+    position: relative;
+    top: 0;
+}
+
+a {
+    color: beige;
+}
+
+a:hover {
+    color: blue;
+}
+
+main {
+    border: 2px solid black;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 6px;
+    gap: 5px;
+    text-align: center;
+}
+
+article {
+    border: 2px solid black;
+}
+
+aside {
+    border: 2px solid black;
+    grid-area: aside;
+}
+
+section {
+    border: 2px solid black;
+    grid-area: section;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2px;
+    gap: 3px;
+}
+
+footer {
+    border: 2px solid black;
+    grid-area: footer;
+}
+
+.category {
+    border: 3px solid black;
+}
