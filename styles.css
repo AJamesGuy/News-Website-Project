@@ -110,4 +110,11 @@ footer {
 
 .category {
     border: 3px solid black;
+    font-style: italic;
+    padding: 30px;
+}
+
+.category-img {
+    height: 80%;
+    width: 80%;
 }
