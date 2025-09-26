@@ -111,6 +111,12 @@ section {
 footer {
     border: 2px solid black;
     grid-area: footer;
+    background-color: black;
+    color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .category {
